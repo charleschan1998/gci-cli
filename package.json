@@ -5,8 +5,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "http://10.91.137.86:8002/repository/npm-group"
+    "access": "public"
   },
   "bin": {
     "gci-cli": "./bin/gci-cli.js"
