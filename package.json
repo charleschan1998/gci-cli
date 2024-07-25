@@ -1,0 +1,33 @@
+{
+  "name": "gci-cli",
+  "version": "3.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://10.91.137.86:8002/repository/npm-group"
+  },
+  "bin": {
+    "gci-cli": "./bin/gci-cli.js"
+  },
+  "keywords": [
+    "gci-boot",
+    "cli"
+  ],
+  "author": "chenyufeng <chenyufeng@gci-china.com>",
+  "license": "ISC",
+  "description": "gci-boot 脚手架工具",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "child_process": "^1.0.2",
+    "commander": "^12.1.0",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^10.1.2",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
