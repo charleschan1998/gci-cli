@@ -29,7 +29,7 @@ const updateProject = async branch => {
         'git remote add gci-boot http://git.96900.com.cn:8080/sources/gci-boot-frontend-demo.git'
       );
       execSync('git fetch gci-boot');
-      execSync('git checkout -b gci-boot@latest gci-boot/gci-boot@3.0.1');
+      execSync('git checkout -b gci-boot@latest gci-boot/master');
       execSync(`git checkout ${branch}`);
       execSync('git merge gci-boot@latest');
       execSync('git branch -d gci-boot@latest');
