@@ -4,12 +4,18 @@ const chalk = require('chalk');
 const { initProject } = require('../src/create');
 const welcome = require('../src/welcome');
 const { program } = require('commander');
+const { updateProject } = require('../src/update');
 
 // 定义使用方法
 program.command('create <projectName>').action(async projectName => {
   console.log(chalk.blue('工程名将被定义为:'), projectName);
   await initProject(projectName);
-});
+}).description('创建新工程');
+
+program.command('update <branch>').action(async branch => {
+  console.log(chalk.blueBright(`仓库分支${branch}: 版本将升级至最新版本`));
+  await updateProject(branch);
+}).description('更新工程版本');
 
 program.on('--help', welcome);
 
