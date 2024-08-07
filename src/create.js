@@ -45,6 +45,10 @@ const initProject = async projectName => {
           {
             name: '纯净模板',
             value: 'gci-boot@thin'
+          },
+          {
+            name: '测试分支（beta）',
+            value: 'gci-boot@beta'
           }
         ]
       }
