@@ -26,7 +26,7 @@ program
   .description('更新工程版本');
 
 program.on('--help', welcome);
-program.version('3.0.3', '-v, --version');
+program.version('3.0.4', '-v, --version');
 
 // 必须，用于解析用户命令输入内容
 program.parse(process.argv);
